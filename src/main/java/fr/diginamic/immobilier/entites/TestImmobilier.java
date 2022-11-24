@@ -11,7 +11,7 @@ public class TestImmobilier {
 	
 	@Test
 	public void testNbPiece() {
-		Piece piece1 = new Piece(2,20); //A REVOIR//
+//		Piece piece1 = new Piece(2,20); //A REVOIR//
 		fail("pas implementé");
 	}
 	
