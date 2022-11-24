@@ -14,17 +14,20 @@ public class SaisonTest {
 
 	@Test
 	public void testToString() {
-		fail("Not yet implemented");
+		String saisonString = "3. Automne";
+		assertEquals(Saison.AUTOMNE.toString(), saisonString);
 	}
 
 	@Test
 	public void testGetLibelle() {
-		fail("Not yet implemented");
+		String saisonLibelle = "Automne";
+		assertEquals(Saison.AUTOMNE.getLibelle(), saisonLibelle);
 	}
 
 	@Test
 	public void testGetOrdre() {
-		fail("Not yet implemented");
+		int saisonOrdre = 3;
+		assertEquals(Saison.AUTOMNE.getOrdre(), saisonOrdre);
 	}
 
 }

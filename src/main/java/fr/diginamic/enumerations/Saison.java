@@ -2,7 +2,7 @@ package fr.diginamic.enumerations;
 /**
  * Représente une saison et fournit les 4 instances de saisons.
  * 
- * @author DIGINAMIC
+ * @author Maxence
  *
  */
 public enum Saison {
@@ -10,16 +10,16 @@ public enum Saison {
 	/** Les 4 instances de Saison */
 	PRINTEMPS("Printemps", 1), ETE("Eté", 2), AUTOMNE("Automne", 3), HIVER("Hiver", 4);
 
-	/** libelle */
+	/** libelle des saisons*/
 	private String libelle;
-	/** ordre */
+	/** ordre des saisons*/
 	private int ordre;
 
 	/**
 	 * Constructeur
 	 * 
-	 * @param libelle libellé
-	 * @param ordre   ordre
+	 * @param libelle
+	 * @param ordre
 	 */
 	private Saison(String libelle, int ordre) {
 		this.libelle = libelle;
@@ -27,10 +27,10 @@ public enum Saison {
 	}
 
 	/**
-	 * Permet de rechercher une Saison à partir de son libellé
+	 * Rechercher une Saison à partir de son libellé
 	 * 
-	 * @param libelle libellé
-	 * @return {@link Saison}
+	 * @param libelle
+	 * @return saison ou null
 	 */
 	public static Saison valueOfLibelle(String libelle) {
 		Saison[] saisons = Saison.values();
@@ -41,7 +41,12 @@ public enum Saison {
 		}
 		return null;
 	}
-
+	
+	
+	
+	/**
+	 *Methode toString pour afficher ordre et libelle
+	 */
 	@Override
 	public String toString() {
 		return ordre + ". " + libelle;
@@ -50,7 +55,7 @@ public enum Saison {
 	/**
 	 * Getter
 	 * 
-	 * @return the libelle
+	 * @return le libelle
 	 */
 	public String getLibelle() {
 		return libelle;
@@ -59,7 +64,7 @@ public enum Saison {
 	/**
 	 * Getter
 	 * 
-	 * @return the ordre
+	 * @return l'ordre
 	 */
 	public int getOrdre() {
 		return ordre;

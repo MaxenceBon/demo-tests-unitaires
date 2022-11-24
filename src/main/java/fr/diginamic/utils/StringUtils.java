@@ -1,5 +1,7 @@
 package fr.diginamic.utils;
 
+import static org.hamcrest.CoreMatchers.nullValue;
+
 /**
  * Classe qui fournit des services de traitements de chaines de caractères
  * 
@@ -26,6 +28,10 @@ public final class StringUtils {
 		}
 
 		for (int j = 1; j < len1; j++) {
+			
+			if (lhs == null || rhs == null) {
+				System.out.println("les paramètres sont nulls");
+			}
 			newcost[0] = j;
 
 			for (int i = 1; i < len0; i++) {
